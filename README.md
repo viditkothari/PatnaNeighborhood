@@ -51,10 +51,37 @@ Then in either a Terminal / Shell / Command-Prompt
 The application will launch & run at http://localhost:8000
 ```
 
+## Offline Use & Service Worker
+By default, the create-react-app includes a service worker in the production build.
+To build the production build, please follow the steps mentioned below (and check the highlights for the corresponsing screenshot)
+
+1. Build the production version app
+`npm run build`
+
+2. Now the build folder appear (as shown in the screenshot later in the README)
+
+3. Light weight WebServer: Although you may setup a server of your choice for this project and for usual Node projects I suggest installing `serve`. It is very easy to set up & it handle much of the work itself. After installation just enter the following command to launch the server (usually localhost:5000)
+```
+> npm install –g serve
+> serve –s build
+```
+
+4. Service Worker running in the browser.
+![image](http://vidit.co.in/neighborhood/production-offline-serviceworker.jpg)
+
+5. Service Worker caching main.{hash}.js, main.{hash}.css and index.html for offline access.
+![image](http://vidit.co.in/neighborhood/serviceworker_inaction.jpg)
+
 ## Highlights
 ![image](http://vidit.co.in/neighborhood/img_1.jpg)
 ![image](http://vidit.co.in/neighborhood/img_2.jpg)
 ![image](http://vidit.co.in/neighborhood/img_3.jpg)
+
+# Offline, Service worker and Production build
+![image](http://vidit.co.in/neighborhood/production-offline-serviceworker.jpg)
+
+# Production build folder structure
+![image](http://vidit.co.in/neighborhood/build-folder-structure.jpg)
 
 ## 3rd Party APIs
 * Foursquare API: Loading the neighbouring locations for the given lattitude & longitude from this API. The places received are shown in the place listing.
