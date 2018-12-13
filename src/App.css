@@ -1,0 +1,176 @@
+header {
+  text-align:center;
+  color: #3A2803;
+  background-color: #f1b900;
+  height: 80px; }
+
+#page-header {
+  margin: auto;
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+  padding-top: 25px; }
+
+#menu {
+  display: none; }
+
+#filter {
+  height: 25pt;
+  display: flex;
+  flex-wrap: wrap; }
+
+#filter-text {
+  width: calc(72% - 10px);
+  padding: 7px;
+  border:3px solid #3A2803;}
+
+#filter-help {
+  font-size: 10pt;
+  padding: 10px 13px;
+  border: none;
+  outline: none;
+  color: #3A2803;
+  text-align: center;background: rgba(240,184,0,1);
+  background: -moz-linear-gradient(-45deg, rgba(240,184,0,1) 0%, rgba(250,218,113,1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(240,184,0,1) 0%, rgba(250,218,113,1) 100%);
+  background: linear-gradient(135deg, rgba(240,184,0,1) 0%, rgba(250,218,113,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b800', endColorstr='#fada71', GradientType=1 ); 
+}
+
+#filter-text:focus,#filter-text:hover {
+  color: #3A2803;
+  border:3px solid #fff6d7;
+}
+
+#placelistview {
+  margin: 0px;
+  width: 250px;
+  background-color: #3A2803; }
+
+#places-list {
+  overflow: scroll;
+  margin: 0px;
+  height: 100vh;
+  padding-left: 0px; }
+
+#places-list li {
+  list-style: none;
+  padding: 0.5em;
+  margin: 0.2em;
+  font-size: 10pt;
+  font-weight: 400;
+  line-height: 2;
+  text-align: left;
+  color: #ffffff;
+  background-color: #3A2803;
+cursor: pointer; }
+
+#places-list li:focus,#places-list li:hover {
+  outline: 0;
+  color: #3A2803;
+  background-color: #f1b900;
+  font-weight: 700;
+}
+.places-list-item, .places-list-item:focus, .places-list-item:hover{
+  background-color: #f1b900;
+}
+#map {
+  bottom: 0px;
+  top: 80px;
+  height: 100%;
+  left: 244px;
+  position: absolute;
+  right: 0px; }
+
+#map-help {
+  text-align: center;
+  font-size: 8pt; }
+
+#map-error {
+  text-align: center;
+  margin-top: 30vh; }
+
+#map-error em,#map-error a {
+  color: red;
+  font-size: 8pt; }
+
+.infowindow {
+  max-width: 40vw;
+  max-height: 40vh;
+  color: #3A2803; }
+
+.infowindow h2 {
+  margin: 0; }
+
+.infowindow p {
+  color: #3A2803;
+  margin: 10px; }
+
+.infowindow ul {
+    margin: 10px;
+    padding-left: 10px; }
+
+.infowindow-item {
+    padding-bottom: 0.2em; }
+
+.infowindow-item a {
+  font-size: 10pt;
+  text-decoration: underline;
+  color: #0045bb; }
+/* The Close Button */
+
+.close {
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  outline: 0;
+  color: #3A2803;
+  cursor: pointer;
+  box-shadow: 0 0 8px 3px;
+}
+@media screen and (max-width: 549px) {
+  .listview {
+    z-index: 10;
+    width: 250px;
+    position: absolute;
+    background-color: #3A2803;
+    visibility: hidden;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-250px, 0);
+    transform: translate(-250px, 0);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+  .listview.open {
+    visibility: visible;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); }
+  #map {
+    top: 110px;
+    bottom: 0px;
+    left: 0px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    margin: 8px; }
+  #menu {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 8px;
+    width: 32px; }
+
+  #menu:focus,#menu:hover {
+    outline: 0;
+  border: none;}
+  
+  #page-header {
+    font-size: 16pt; }
+}
