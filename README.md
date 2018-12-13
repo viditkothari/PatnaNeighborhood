@@ -57,9 +57,7 @@ To build the production build, please follow the steps mentioned below (and chec
 
 1. Build the production version app
 `npm run build`
-
 2. Now the build folder appear (as shown in the screenshot later in the README)
-
 3. Light weight WebServer: Although you may setup a server of your choice for this project and for usual Node projects I suggest installing `serve`. It is very easy to set up & it handle much of the work itself. After installation just enter the following command to launch the server (usually localhost:5000)
 ```
 > npm install –g serve
@@ -77,10 +75,10 @@ To build the production build, please follow the steps mentioned below (and chec
 ![image](http://vidit.co.in/neighborhood/img_2.jpg)
 ![image](http://vidit.co.in/neighborhood/img_3.jpg)
 
-# Offline, Service worker and Production build
+### - Offline, Service worker and Production build
 ![image](http://vidit.co.in/neighborhood/production-offline-serviceworker.jpg)
 
-# Production build folder structure
+### - Production build folder structure
 ![image](http://vidit.co.in/neighborhood/build-folder-structure.jpg)
 
 ## 3rd Party APIs
