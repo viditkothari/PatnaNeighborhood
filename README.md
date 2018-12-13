@@ -51,6 +51,11 @@ Then in either a Terminal / Shell / Command-Prompt
 The application will launch & run at http://localhost:8000
 ```
 
+## Highlights
+![image](http://vidit.co.in/neighborhood/img_1.jpg)
+![image](http://vidit.co.in/neighborhood/img_2.jpg)
+![image](http://vidit.co.in/neighborhood/img_3.jpg)
+
 ## 3rd Party APIs
 * Foursquare API: Loading the neighbouring locations for the given lattitude & longitude from this API. The places received are shown in the place listing.
 ```
